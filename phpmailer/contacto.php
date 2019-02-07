@@ -15,9 +15,9 @@ $mail->Port = 465;          //587                          // TCP port to connec
 
 
 //echo $email= $_POST['n2']."@".$_POST['n3'];
-$mail->setFrom('developer@thetixs.com', 'www.karolaincalderon.com.ve');
+$mail->setFrom('developer@thetixs.com', 'Hey Karolain!');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-$mail->addAddress('karolainc26@gmail.com');              // Name is optional
+$mail->addAddress('junior.marquez.hsc@gmail.com');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
 //$mail->addCC('passmethecode@gmail.com');
 //$mail->addBCC('bcc@example.com');
@@ -26,13 +26,15 @@ $mail->addAddress('karolainc26@gmail.com');              // Name is optional
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Contact from karolainCalderon.com.ve';
+$mail->Subject = 'Desean contactarte desde tu portafolio...';
 $mail->Body    = 
    
     '<div align="center" style="background-color:#f6f8f8;">
         <div align="center" style="display:inline-block;
                                   height:auto;
-                                  width:100%;">
+                                  width:100%;
+                                  color:white;
+                                  ">
           
 
           <div style="; padding:20px;" align="left">
@@ -45,13 +47,17 @@ $mail->Body    =
            <div style=" padding:20px;" align="left">
             <br/>
             <b>Email: </b>
-           '.$_POST['email'].' , <b>Telefono: </b>  '.$_POST['phone'].'        
+           '.$_POST['email'].' , 
+           <br/>
+           <b>Telf: </b>  '.$_POST['phone'].'        
           </div>
 
           <div style=" padding:20px;" align="left">
             <br/>
             <b>Mensaje: </b>
-           '.$_POST['message'].'                     
+            <span style="color:yellow;">
+           '.$_POST['message'].'        
+           </span>             
           </div>
 
           <div style="border-radius:10px; width: 320PX; box-shadow:5px 5px 17px 0px rgba(44, 50, 50, 0.14);">
