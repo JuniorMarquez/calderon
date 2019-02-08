@@ -17,7 +17,7 @@ $mail->Port = 465;          //587                          // TCP port to connec
 //echo $email= $_POST['n2']."@".$_POST['n3'];
 $mail->setFrom('developer@thetixs.com', 'Hey! Karolain, vieron tu portafolio');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-$mail->addAddress('karo_ecm@hotmail.com');              // Name is optional
+$mail->addAddress('karo_ecom');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
 //$mail->addCC('passmethecode@gmail.com');
 //$mail->addBCC('bcc@example.com');
